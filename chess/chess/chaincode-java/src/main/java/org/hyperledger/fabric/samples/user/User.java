@@ -8,11 +8,11 @@ import com.owlike.genson.annotation.JsonProperty;
 import java.util.Objects;
 
 /**
- * @description:
- * @projectName:UserContract
- * @see:org.hyperledger.fabric.samples.user
- * @author:yst
- * @createTime:2023/11/19 15:13 version:
+ * Created with IntelliJ IDEA.
+ * Description:
+ * User: Cbiltps
+ * Date: 2024-03-08
+ * Time: 9:08
  */
 @DataType()
 public final class User {
