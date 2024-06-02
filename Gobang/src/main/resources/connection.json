@@ -45,10 +45,10 @@
         "ca-org1"
       ],
       "adminPrivateKeyPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/611ef74b0dbad6662279aebecbb9241795c77ffc28c088aaf469522b9627e39e_sk"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/611ef74b0dbad6662279aebecbb9241795c77ffc28c088aaf469522b9627e39e_sk"
       },
       "signedCertPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/cert.pem"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/cert.pem"
       }
     },
     "Org2": {
@@ -60,10 +60,10 @@
         "ca-org2"
       ],
       "adminPrivateKeyPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/3437495bc54a4b2523ee90a7b3ba66b0560ddbecbe3e0e82ae23e7efeb9a5ee4_sk"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/3437495bc54a4b2523ee90a7b3ba66b0560ddbecbe3e0e82ae23e7efeb9a5ee4_sk"
       },
       "signedCertPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/cert.pem"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/cert.pem"
       }
     }
   },
@@ -76,13 +76,13 @@
         "hostnameOverride": "orderer.example.com"
       },
       "tlsCACerts": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt"
       },
       "adminPrivateKeyPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/00e5d91476121f2e237f61b0b2dda71837b35c598c381e5eabb94557d3d5f836_sk"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/00e5d91476121f2e237f61b0b2dda71837b35c598c381e5eabb94557d3d5f836_sk"
       },
       "signedCertPEM": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/cert.pem"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/cert.pem"
       }
     }
   },
@@ -95,7 +95,7 @@
         "request-timeout": 120001
       },
       "tlsCACerts": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
       }
     },
     "peer0.org2.example.com": {
@@ -106,7 +106,7 @@
         "request-timeout": 120001
       },
       "tlsCACerts": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
       }
     }
   },
@@ -117,7 +117,7 @@
         "verify": true
       },
       "tlsCACerts": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem"
       },
       "registrar": [
         {
@@ -132,7 +132,7 @@
         "verify": true
       },
       "tlsCACerts": {
-        "path": "/Users/lichengxiang/Documents/Code/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem"
+        "path": "/Users/lichengxiang/Documents/Coding/JavaCode/BlockchainProject/Gobang/src/main/resources/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem"
       },
       "registrar": [
         {

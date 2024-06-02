@@ -91,7 +91,6 @@ public class FabricService {
     }
 
     /* Query all users */
-    @GetMapping("/all")
     public Map<String, Object> getAllUsers() throws GatewayException {
         Map<String, Object> result = Maps.newConcurrentMap();
         byte[] queryAllUsers = contract.evaluateTransaction("GetAllUsers");

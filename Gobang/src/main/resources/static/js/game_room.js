@@ -40,7 +40,7 @@ websocket.onbeforeunload = function () {
 websocket.onmessage = function (event) {
     console.log("[handlerGameReady] " + event.data);
     let resp = JSON.parse(event.data);
-
+    console.log(resp);
     if (!resp.ok) {
         alert("连接游戏失败! reason: " + resp.reason);
         // 连接游戏失败, 返回游戏大厅
@@ -115,7 +115,7 @@ function initGame() {
         websocket.onmessage = function (event) {
             let resp = JSON.parse(event.data);
             if (resp.message != 'putChess') {
-                console.log(" !")
+                console.log("not putChess resp!")
                 return;
             }
 
