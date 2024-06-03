@@ -20,16 +20,16 @@ import java.security.cert.X509Certificate;
 import java.util.Properties;
 
 /**
- * @description:
- * @projectName:chess
- * @see:com.example.gobang.fabric
- * @author:yst
- * @createTime:2023/11/19 12:23 version:
+ * Created with IntelliJ IDEA.
+ * Description:
+ * User: cbiltps
+ * Date: 2023-10-22
+ * Time: 13:31
  */
 @Configuration
 @AllArgsConstructor
 @Slf4j
-public class HyperLedgerFabricGatewayJavaConfig {
+public class FabricConfig {
 
     @Bean
     public Gateway gateway() {
@@ -43,14 +43,15 @@ public class HyperLedgerFabricGatewayJavaConfig {
             X509Certificate certificate = readX509Certificate(Paths.get(certificatePath));
             String privateKeyPath = properties.getProperty("privateKeyPath");
             PrivateKey privateKey = getPrivateKey(Paths.get(privateKeyPath));
+            // 创建一个钱包, 并添加一个用户用于连接Fabric网络
             Wallet wallet = Wallets.newInMemoryWallet();
             wallet.put("user1", Identities.newX509Identity("Org2MSP", certificate, privateKey));
-
+            // 构建网关的构造器
             Gateway.Builder builder =
                     Gateway.createBuilder()
                             .identity(wallet, "user1")
                             .networkConfig(Paths.get(networkConfigPath));
-
+            // 建立网络连接, 获取网关对象
             Gateway gateway = builder.connect();
 
             log.info("=========================================== connected fabric gateway {} ", gateway);
